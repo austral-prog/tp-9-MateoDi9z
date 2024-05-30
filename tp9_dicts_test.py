@@ -30,6 +30,7 @@ class InventoryTest(unittest.TestCase):
                          {"iron": 1, "diamond": 3, "gold": 0})
 
     def test_not_below_zero(self):
+        # ???
         self.assertEqual(decrement_items({"wood": 2, "iron": 3, "diamond": 1},
                                          ["wood", "wood", "wood", "iron", "diamond", "diamond"]),
                          {"wood": 0, "iron": 2, "diamond": 0})
